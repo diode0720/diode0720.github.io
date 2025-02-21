@@ -22,6 +22,26 @@
             font-size: 24px;
             font-weight: bold;
         }
+        .gallery {
+            position: absolute;
+            top: 60px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            width: 80%;
+        }
+        .gallery img {
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
         .buy-button {
             position: absolute;
             bottom: 50px;
@@ -43,6 +63,13 @@
 </head>
 <body>
     <div class="header">Customize & Print</div>
+    
+    <div class="gallery">
+        <a href="product1.html"><img src="product1.jpg" alt="Product 1"></a>
+        <a href="product2.html"><img src="product2.jpg" alt="Product 2"></a>
+        <a href="product3.html"><img src="product3.jpg" alt="Product 3"></a>
+    </div>
+    
     <button class="buy-button" onclick="window.location.href='YOUR_PAYPAL_LINK_HERE'">Buy Now</button>
     
     <script>
